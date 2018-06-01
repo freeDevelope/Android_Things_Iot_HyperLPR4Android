@@ -1,0 +1,2 @@
+include ':mobile', ':things', ':camera', ':hyperlpr', ':hyperlpr_android'
+include ':openCVLibrary330'

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TCPActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:id="@+id/layout_01">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IP地址"
+            android:textSize="15sp"
+            />
+
+        <EditText
+            android:layout_width="265dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/edit_text_ip_addr"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@id/layout_01"
+        android:layout_marginTop="96dp"
+        android:orientation="horizontal"
+        android:id="@+id/layout_02">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="端口号" />
+
+        <EditText
+            android:layout_width="265dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/edit_text_port"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/layout_02"
+        android:layout_marginTop="20dp"
+        android:id="@+id/btn_connect_tcp"
+        android:text="连接TCP"
+        android:textAllCaps="false"
+        />
+
+    <EditText
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:hint="输入发送的消息"
+        android:layout_below="@id/btn_connect_tcp"
+        android:layout_alignLeft="@id/layout_02"
+        android:layout_marginTop="50dp"
+        android:id="@+id/edit_text_message"
+        />
+
+    <Button
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_send_meaasge"
+        android:text="发送"
+        android:layout_below="@id/edit_text_message"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+
+</RelativeLayout>
